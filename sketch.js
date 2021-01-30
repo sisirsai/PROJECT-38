@@ -73,7 +73,9 @@ function setup() {
   gameOver.visible = false;
   restart.visible = false;
   
- 
+   camera.position.x = 0
+  camera.position.y = 0
+  
   // invisibleGround.visible =false
 
   cloudsGroup = new Group();
@@ -89,8 +91,7 @@ function draw() {
   fill("black")
   text("Score: "+ score,30,50);
   
-  camera.position.x = 0
-  camera.position.y = 0
+
   
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
