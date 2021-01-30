@@ -89,6 +89,8 @@ function draw() {
   fill("black")
   text("Score: "+ score,30,50);
   
+  camera.position.x = trex.x;
+  camera.position.y = trex.y;
   
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
