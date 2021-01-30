@@ -89,8 +89,8 @@ function draw() {
   fill("black")
   text("Score: "+ score,30,50);
   
-  camera.position.x = 50
-  camera.position.y = 50
+  camera.position.x = 0
+  camera.position.y = 0
   
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
